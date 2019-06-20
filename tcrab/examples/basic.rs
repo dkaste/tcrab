@@ -1,6 +1,6 @@
-use tcrab_console::{Console, Color, Canvas, Event, ControlFlow};
-use tcrab_console::event::{KeyCode, ButtonState};
-use tcrab_console::canvas::{Cell, CellBuffer};
+use tcrab::console::{Console, Color, Canvas, Event, ControlFlow};
+use tcrab::console::event::{KeyCode, ButtonState};
+use tcrab::console::canvas::{Cell, CellBuffer};
 use tcrab_console_gl::TextureRegion;
 
 const TILESET_IMAGE_DATA: &[u8] = include_bytes!("./terminal.png");
@@ -12,7 +12,7 @@ enum CustomGlyph {
     HappyFace,
 }
 
-impl tcrab_console::canvas::CustomGlyph for CustomGlyph {}
+impl tcrab::console::canvas::CustomGlyph for CustomGlyph {}
 
 fn draw<C: Canvas<CustomGlyph>>(canvas: &mut C, player_pos: (i32, i32)) {
     canvas.fill(Cell {
