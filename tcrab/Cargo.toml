@@ -1,6 +1,6 @@
 [package]
 name = "tcrab"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Darren Kaste <darrenkaste@gmail.com>"]
 edition = "2018"
 description = "A pure-Rust alternative to libtcod"
@@ -9,9 +9,9 @@ repository = "https://github.com/dkaste/tcrab"
 documentation = "https://docs.rs/tcrab"
 
 [dependencies]
-tcrab_console = { version = "^0.1.0", path = "../tcrab_console" }
+tcrab_console = { version = "^0.2.0", path = "../tcrab_console" }
 
 [dev-dependencies]
 pretty_env_logger = "^0.3.0"
 image = { version = "^0.21.2", default-features = false, features = ["png_codec"] }
-tcrab_console_gl = { version = "^0.1.0", path = "../tcrab_console_gl" }
+tcrab_console_gl = { version = "^0.2.0", path = "../tcrab_console_gl" }

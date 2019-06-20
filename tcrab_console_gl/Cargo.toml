@@ -1,6 +1,6 @@
 [package]
 name = "tcrab_console_gl"
-version = "0.1.1"
+version = "0.2.0"
 authors = ["Darren Kaste <darrenkaste@gmail.com>"]
 edition = "2018"
 description = "An OpenGL 3.3 console emulator"
@@ -12,4 +12,4 @@ documentation = "https://docs.rs/tcrab_console_gl"
 log = "^0.4.6"
 glutin = "^0.21.0"
 gl = "^0.12.0"
-tcrab_console = { version = "^0.1.0", path = "../tcrab_console" }
+tcrab_console = { version = "^0.2.0", path = "../tcrab_console" }
