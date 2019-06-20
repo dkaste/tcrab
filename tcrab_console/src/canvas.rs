@@ -55,11 +55,30 @@ pub struct Cell<C: CustomGlyph> {
     pub background_color: Color,
 }
 
+impl<C: CustomGlyph> Default for Cell<C> {
+    fn default() -> Cell<C> {
+        Cell {
+            glyph: ' '.into(),
+            foreground_color: Color::WHITE,
+            background_color: Color::BLACK,
+        }
+    }
+}
+
 pub trait Canvas<C: CustomGlyph> {
     fn size(&self) -> (usize, usize);
     
     fn get_cell(&self, x: usize, y: usize) -> Cell<C>;
     fn set_cell(&mut self, x: usize, y: usize, cell: Cell<C>);
+
+    fn fill(&mut self, cell: Cell<C>) {
+        let (width, height) = self.size();
+        for y in 0..height {
+            for x in 0..width {
+                self.set_cell(x, y, cell);
+            }
+        }
+    }
 }
 
 #[cfg_attr(feature = "serde", derive(Serialize, Deserialize))]
