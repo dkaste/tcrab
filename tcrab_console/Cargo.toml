@@ -5,6 +5,8 @@ authors = ["Darren Kaste <darrenkaste@gmail.com>"]
 edition = "2018"
 description = "A roguelike-friendly abstraction around console/terminal emulators"
 license = "MIT OR Apache-2.0"
+repository = "https://github.com/dkaste/tcrab"
+documentation = "https://docs.rs/tcrab_console"
 
 [features]
 serialize = ["serde"]
