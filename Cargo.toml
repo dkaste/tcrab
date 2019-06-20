@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "tcrab_console",
+    "tcrab_console_gl",
+    "tcrab",
+]

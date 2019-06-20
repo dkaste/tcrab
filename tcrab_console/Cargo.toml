@@ -1,0 +1,11 @@
+[package]
+name = "tcrab_console"
+version = "0.1.0"
+authors = ["Darren Kaste <darrenkaste@gmail.com>"]
+edition = "2018"
+
+[features]
+serialize = ["serde"]
+
+[dependencies]
+serde = { version = "^1.0.92", features = ["derive"], optional = true }

@@ -1,0 +1,11 @@
+[package]
+name = "tcrab_console_gl"
+version = "0.1.0"
+authors = ["Darren Kaste <darrenkaste@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+log = "^0.4.6"
+glutin = "^0.21.0"
+gl = "^0.12.0"
+tcrab_console = { path = "../tcrab_console" }
