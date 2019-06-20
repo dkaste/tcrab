@@ -191,13 +191,12 @@ impl tcrab_console::Console for Console {
         G: tcrab_console::canvas::CustomGlyph,
         C: tcrab_console::Canvas<G>,
     {
-        self.windowed_context.window().show();
-        
         let (width_cells, height_cells) = canvas.size();
         let window_width = width_cells as u32 * self.cell_width;
         let window_height = height_cells as u32 * self.cell_height;
         self.windowed_context.window().set_inner_size(
             glutin::dpi::LogicalSize::new(window_width as f64, window_height as f64));
+        self.windowed_context.window().show();
         unsafe {
             glcheck!(gl::ClearColor(1.0, 0.0, 1.0, 1.0));
             glcheck!(gl::Clear(gl::COLOR_BUFFER_BIT));
