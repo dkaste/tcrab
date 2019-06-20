@@ -12,4 +12,4 @@ tcrab_console = { path = "../tcrab_console" }
 [dev-dependencies]
 pretty_env_logger = "^0.3.0"
 image = { version = "^0.21.2", default-features = false, features = ["png_codec"] }
-tcrab_console_gl = { path = "../tcrab_console_gl" }
+tcrab_console_gl = { version = "^0.1.0", path = "../tcrab_console_gl" }
