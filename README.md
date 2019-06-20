@@ -1,4 +1,4 @@
-# tcrab
+# tcrab ![](https://img.shields.io/crates/v/tcrab.svg?label=tcrab)
 A pure-Rust alternative to libtcod
 
 **WARNING**: `tcrab` is not ready for any real use yet, but it's on its way!
